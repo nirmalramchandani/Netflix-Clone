@@ -1,0 +1,140 @@
+section {
+    width: 80vw;
+    margin: 8vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+section>div {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+section>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+section>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    width: 38vw;
+}
+
+section img {
+    width: 37vw;
+    position: relative;
+    z-index: 10;
+}
+
+.tv-video {
+    position: relative;
+}
+
+.tv-video video {
+    position: absolute;
+    right: 4vw;
+    bottom: 7vw;
+    width: 28vw;
+}
+
+.special {
+    position: relative;
+}
+
+.sp-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3vw;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.511);
+    border-radius: 15px;
+    gap: 15px;
+    max-width: 500px;
+    min-width: 250px;
+    width: 30vw;
+    font-size: larger;
+    font-weight: 400;
+    font-family: Helvetica, sans-serif;
+    position: absolute;
+    right: -0.5vw;
+    top: 18vw;
+    z-index: 10
+}
+
+.device-video {
+    position: relative;
+}
+
+.device-video video {
+    position: absolute;
+    right: 7vw;
+    bottom: 12vw;
+    width: 23vw;
+}
+
+.faq {
+    color: white;
+    margin: 50px auto;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq>:first-child {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.question {
+    background-color: rgba(57, 53, 53, 0.814);
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 30px 20px;
+    margin-top: 10px;
+    width: 74vw;
+    transition: all 1s ease-in-out;
+}
+
+.question:hover {
+    background-color: rgba(86, 81, 81, 0.904);
+    cursor: pointer;
+}
+
+.email-text {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px 2vw 20px 2vw;
+}
+
+@media screen and (max-width:960px) {
+    section {
+        flex-direction: column;
+    }
+
+    section>div {
+        align-items: center;
+    }
+
+    section>div :nth-child(1) {
+        text-align: center;
+    }
+
+    section>div :nth-child(2) {
+        width: auto;
+        text-align: center;
+    }
+}

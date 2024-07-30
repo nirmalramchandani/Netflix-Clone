@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 95vh;
+    background-image: url(assets/images/bg.jpg);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(100vw, 1430px);
+}
+
+.main .box {
+    height: 95vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    margin: 0px auto;
+    height: 75px;
+    width: 76vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5vh;
+}
+
+nav img {
+    color: red;
+    width: 135px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+nav button:nth-child(1) {
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.448);
+    padding: 6px 3px 2px 3px;
+    border: 1px solid gray;
+    font-size: medium;
+}
+
+nav button:nth-child(2) {
+    width: 74px;
+    margin-left: 2vw;
+    background-color: red;
+    padding: 5px 10px 2px 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.main .hero {
+    color: white;
+    position: relative;
+    z-index: 10;
+    height: calc(100% - 85px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+    padding: 0px 25px;
+}
+
+.hero>:first-child {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.input>input {
+    padding: 20px 15px 7px 15px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.763);
+    background-color: rgba(112, 126, 227, 0.203);
+    position: relative;
+    z-index: 10;
+    height: 28px;
+    border-radius: 5px;
+    width: 25vw;
+    font-weight: 700;
+}
+
+.input>button {
+    padding: 15px 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    background-color: red;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.seperation {
+    min-height: 8px;
+    height: 1.3vh;
+    background-color: rgba(128, 128, 128, 0.355);
+}
+
+@media screen and (max-width:500px) {
+    .hide {
+        display: none;
+    }
+
+    nav button:nth-child(1) {
+        display: none;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+    }
+}
